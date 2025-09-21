@@ -6,6 +6,8 @@ export type CTABoxProps = {
 	className?: string;
 };
 
+import type { JSX } from "react";
+
 export function CTABox({ title, description, ctaHref, ctaLabel, className }: CTABoxProps): JSX.Element {
 	return (
 		<div className={`rounded-xl border border-neutral-200/70 bg-gradient-to-br from-yellow/10 to-green/10 p-6 ${className ?? ""}`}>

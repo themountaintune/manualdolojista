@@ -1,3 +1,5 @@
+import type { JSX } from "react";
+
 export function Footer(): JSX.Element {
   return (
     <footer className="border-t border-neutral-200/60 mt-16 py-10 text-sm text-neutral-600">

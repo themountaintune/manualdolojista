@@ -7,7 +7,7 @@ export type AuthorBoxProps = {
 	className?: string;
 };
 
-export function AuthorBox({ name, role, experience = "+15 anos de experiência", avatarUrl, linkedinUrl, className }: AuthorBoxProps): JSX.Element {
+export function AuthorBox({ name, role, experience = "+15 anos de experiência", avatarUrl, linkedinUrl, className }: AuthorBoxProps) {
 	return (
 		<div className={`flex items-center gap-4 rounded-lg border border-neutral-200/70 bg-white p-4 ${className ?? ""}`}>
 			{avatarUrl ? (

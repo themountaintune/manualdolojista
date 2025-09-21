@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { JSX } from "react";
 
 export function CookieBanner(): JSX.Element | null {
 	const [visible, setVisible] = useState(false);

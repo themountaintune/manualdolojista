@@ -8,6 +8,8 @@ export type CardProps = {
 	className?: string;
 };
 
+import type { JSX } from "react";
+
 export function Card({ imageSrc, title, description, ctaHref, ctaLabel = "Ler mais", meta, className }: CardProps): JSX.Element {
 	return (
 		<article className={`group overflow-hidden rounded-lg border border-neutral-200/70 bg-white transition-shadow hover:shadow-md ${className ?? ""}`}>

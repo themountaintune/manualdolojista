@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import type { JSX } from "react";
 
 export function NewsletterForm(): JSX.Element {
 	const [email, setEmail] = useState("");

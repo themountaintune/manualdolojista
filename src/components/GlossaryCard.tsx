@@ -5,6 +5,8 @@ export type GlossaryCardProps = {
 	className?: string;
 };
 
+import type { JSX } from "react";
+
 export function GlossaryCard({ term, description, href, className }: GlossaryCardProps): JSX.Element {
 	return (
 		<a href={href} className={`block rounded-lg border border-neutral-200/70 bg-white p-4 hover:shadow ${className ?? ""}`}>
