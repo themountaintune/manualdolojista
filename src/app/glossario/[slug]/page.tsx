@@ -1,3 +1,8 @@
+export function generateStaticParams() {
+  const slugs = ["ab-test", "cac", "ltv"];
+  return slugs.map((slug) => ({ slug }));
+}
+
 export default function TermPage({ params }: { params: { slug: string } }) {
   return (
     <div className="prose">

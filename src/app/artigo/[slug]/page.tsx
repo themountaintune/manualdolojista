@@ -1,6 +1,12 @@
 import AuthorBox from "@/components/AuthorBox";
 import Card from "@/components/Card";
 
+export function generateStaticParams() {
+  // minimal set of demo slugs to allow static export
+  const slugs = ["exemplo-1", "exemplo-2"];
+  return slugs.map((slug) => ({ slug }));
+}
+
 export default function ArticlePage({ params }: { params: { slug: string } }) {
   return (
     <div className="space-y-10">
