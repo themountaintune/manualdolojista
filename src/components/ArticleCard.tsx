@@ -9,12 +9,13 @@ export type ArticleCardProps = {
 };
 
 import type { JSX } from "react";
+import Image from "next/image";
 
 export function ArticleCard({ img, cat, title, excerpt, meta, href = "#", className }: ArticleCardProps): JSX.Element {
 	return (
 		<a className={`group block rounded-2xl border border-border overflow-hidden shadow-card hover:shadow-hover transition-shadow bg-paper text-ink focus:outline-none focus:ring-2 focus:ring-brand-teal ${className ?? ""}`} href={href}>
-			<div className="aspect-card w-full overflow-hidden bg-zinc-50">
-				<img src={img} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.01]" />
+			<div className="relative aspect-card w-full overflow-hidden bg-zinc-50">
+				<Image src={img} alt="" fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover transition-transform duration-300 group-hover:scale-[1.01]" />
 			</div>
 			<div className="p-5">
 				<span className="inline-flex text-xs px-2 py-0.5 rounded-full bg-brand-yellow text-ink font-medium">{cat}</span>
