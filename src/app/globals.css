@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #e6e9ef;
+  --muted: #9aa3b2;
+  --paper: #0b1220;
+  --panel: #111827;
+  --brand: #06b6d4;
+  --accent: #16a34a;
+  --border: #1f2937;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-paper: var(--paper);
+  --color-panel: var(--panel);
+  --color-brand: var(--brand);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+
+  --font-sans: ui-sans-serif, system-ui, "Inter", -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans";
+}
+
+html, body { height: 100%; }
+body { @apply bg-paper text-ink antialiased; }
+
+.container { @apply max-w-[1200px] mx-auto px-4 md:px-6; }
+
+.card { @apply rounded-2xl border border-border bg-panel/60 backdrop-blur shadow; }
+
+.btn { @apply inline-flex h-10 items-center rounded-xl px-4 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand; }
+.btn-primary { @apply bg-brand text-white hover:opacity-90; }
+.btn-ghost { @apply bg-white/5 text-ink hover:bg-white/10 border border-border; }
+
