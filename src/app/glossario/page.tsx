@@ -19,10 +19,10 @@ export default function GlossarioPage() {
   return (
     <div className="space-y-8">
       <div className="flex items-center gap-3">
-        <input className="w-full rounded-md border border-neutral-300 px-3 py-2" placeholder="Buscar termos..." />
+        <input className="w-full rounded-xl border border-zinc-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-teal" placeholder="Buscar termos..." />
         <nav className="hidden md:flex items-center gap-2 text-sm">
           {letters.map((l) => (
-            <a key={l} href={`#${l}`} className="rounded border border-neutral-200 px-2 py-1 hover:bg-neutral-50">{l}</a>
+            <a key={l} href={`#${l}`} className="rounded-xl border border-zinc-200 px-2 py-1 hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-brand-teal">{l}</a>
           ))}
         </nav>
       </div>
