@@ -29,8 +29,11 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Build static site
-        run: npm run build
+      - name: Build static site (GH Pages)
+        run: |
+          echo "Using basePath=/manualdolojista for GitHub Pages"
+          $env:NEXT_PUBLIC_BASE_PATH = "/manualdolojista"
+          npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
