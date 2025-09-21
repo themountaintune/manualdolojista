@@ -2,19 +2,36 @@
 @plugin "@tailwindcss/typography";
 
 :root {
+  /* base tokens */
   --background: #ffffff;
   --foreground: #171717;
-  --brand-teal: #0f766e; /* teal-700 */
-  --brand-yellow: #f59e0b; /* amber-500 */
-  --brand-green: #10b981; /* emerald-500 */
+  --brand-teal: #0f766e; /* primary */
+  --brand-yellow: #f59e0b; /* accent */
+  --brand-green: #10b981; /* success */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
 }
 
 @theme inline {
+  /* color palette */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-teal: var(--brand-teal);
   --color-yellow: var(--brand-yellow);
   --color-green: var(--brand-green);
+
+  /* semantic */
+  --color-primary: var(--brand-teal);
+  --color-accent: var(--brand-yellow);
+  --color-success: var(--brand-green);
+
+  /* radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+
+  /* fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
