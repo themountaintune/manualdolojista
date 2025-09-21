@@ -1,0 +1,10 @@
+export default function CasePage({ params }: { params: { id: string } }) {
+  return (
+    <div className="prose">
+      <h1>Case {params.id}</h1>
+      <p>Histórico, desafios, solução e resultados.</p>
+    </div>
+  );
+}
+
+
