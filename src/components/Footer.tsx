@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import Link from "next/link";
 
 export function Footer(): JSX.Element {
   return (
@@ -11,18 +12,18 @@ export function Footer(): JSX.Element {
         <div>
           <div className="font-semibold text-ink">Navegação</div>
           <nav className="mt-2 grid gap-1">
-            <a href="/" className="hover:text-ink">Início</a>
-            <a href="/glossario" className="hover:text-ink">Glossário</a>
-            <a href="/materiais" className="hover:text-ink">Materiais</a>
-            <a href="/cases" className="hover:text-ink">Cases</a>
+            <Link href="/" className="hover:text-ink">Início</Link>
+            <Link href="/glossario" className="hover:text-ink">Glossário</Link>
+            <Link href="/materiais" className="hover:text-ink">Materiais</Link>
+            <Link href="/cases" className="hover:text-ink">Cases</Link>
           </nav>
         </div>
         <div>
           <div className="font-semibold text-ink">Transparência</div>
           <nav className="mt-2 grid gap-1">
-            <a href="/privacy-policy" className="hover:text-ink">Privacidade</a>
-            <a href="/disclosure" className="hover:text-ink">Disclosure</a>
-            <a href="/como-testamos" className="hover:text-ink">Como testamos</a>
+            <Link href="/privacy-policy" className="hover:text-ink">Privacidade</Link>
+            <Link href="/disclosure" className="hover:text-ink">Disclosure</Link>
+            <Link href="/como-testamos" className="hover:text-ink">Como testamos</Link>
           </nav>
         </div>
       </div>

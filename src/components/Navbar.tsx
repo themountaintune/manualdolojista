@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import type { JSX } from "react";
 
 const navLinks = [
@@ -12,8 +11,6 @@ const navLinks = [
 ];
 
 export function Navbar(): JSX.Element {
-  const pathname = usePathname();
-
   return (
     <header className="sticky top-0 z-30 bg-white/80 backdrop-blur border-b">
 			<div className="max-w-[1200px] mx-auto px-4 h-14 flex items-center gap-6">
