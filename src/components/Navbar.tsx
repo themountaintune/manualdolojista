@@ -5,9 +5,9 @@ import type { JSX } from "react";
 
 const navLinks = [
 	{ href: "/", label: "Início" },
-	{ href: "/glossario", label: "Glossário" },
-	{ href: "/materiais", label: "Materiais" },
-	{ href: "/cases", label: "Cases" },
+	{ href: "/glossario/", label: "Glossário" },
+	{ href: "/materiais/", label: "Materiais" },
+	{ href: "/cases/", label: "Cases" },
 ];
 
 export function Navbar(): JSX.Element {
