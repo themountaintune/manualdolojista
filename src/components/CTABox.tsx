@@ -2,19 +2,29 @@ export type CTABoxProps = {
 	title: string;
 	description?: string;
 	ctaHref: string;
-	ctaLabel: string;
+	ctaLabel?: string;
+	kind?: "download" | "checklist";
 	className?: string;
 };
 
 import type { JSX } from "react";
 
-export function CTABox({ title, description, ctaHref, ctaLabel, className }: CTABoxProps): JSX.Element {
+export function CTABox({ title, description, ctaHref, ctaLabel, kind, className }: CTABoxProps): JSX.Element {
 	return (
-		<div className={`rounded-xl border border-neutral-200/70 bg-gradient-to-br from-yellow/10 to-green/10 p-6 ${className ?? ""}`}>
-			<h3 className="text-lg font-bold text-neutral-900">{title}</h3>
-			{description ? <p className="mt-2 text-neutral-700">{description}</p> : null}
-			<a href={ctaHref} className="mt-4 inline-flex items-center rounded-md bg-teal px-4 py-2 font-semibold text-white hover:opacity-90">
-				{ctaLabel}
+		<div className={`p-5 rounded-2xl border bg-paper ${className ?? ""}`}>
+			<div className="text-sm font-semibold text-ink">{title}</div>
+			{description ? <p className="text-sm text-ink/80 mt-1">{description}</p> : null}
+			<a
+				href={ctaHref}
+				className={`inline-flex mt-3 h-10 px-4 items-center rounded-xl ${
+					kind === "download"
+						? "bg-brand-teal text-white"
+						: kind === "checklist"
+						? "bg-brand-yellow text-ink"
+						: "bg-brand-teal text-white"
+				}`}
+			>
+				{ctaLabel ?? (kind === "checklist" ? "Ver checklist" : "Baixar")}
 			</a>
 		</div>
 	);

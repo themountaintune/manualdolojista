@@ -1,65 +1,45 @@
-import Tabs from "@/components/Tabs";
-import Card from "@/components/Card";
-import NewsletterForm from "@/components/NewsletterForm";
 import CookieBanner from "@/components/CookieBanner";
+import Hero from "@/components/Hero";
+import ArticleCard from "@/components/ArticleCard";
 
 export default function Home() {
-  const tabs = [
-    { id: "marketing", label: "Marketing" },
-    { id: "ferramentas", label: "Ferramentas" },
-    { id: "logistica", label: "Logística" },
-    { id: "gestao", label: "Gestão" },
-  ];
-
   return (
-    <div className="space-y-12">
-      {/* Hero */}
-      <section className="relative overflow-hidden rounded-2xl">
-        <img src="/window.svg" alt="Hero" className="h-72 w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-        <div className="absolute inset-0 flex items-end">
-          <div className="container pb-6">
-            <h1 className="text-3xl md:text-5xl font-bold text-white">Manual do Lojista</h1>
-            <p className="mt-2 text-neutral-100">Conteúdos práticos para e-commerce e varejo.</p>
-          </div>
+    <div className="max-w-[1200px] mx-auto px-4 py-10 space-y-10">
+      <Hero />
+
+      <section>
+        <h2 className="text-xl font-semibold mb-3">Mais lidos</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <ArticleCard img="https://images.pexels.com/photos/3184630/pexels-photo-3184630.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop" cat="Ferramentas" title="Plataformas em 2025" excerpt="Matriz neutra de decisão" meta="19/09/2025 · 8 min" />
+          <ArticleCard img="https://images.pexels.com/photos/3184456/pexels-photo-3184456.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop" cat="Marketing" title="Primeira campanha do zero" excerpt="Guia rápido com exemplos" meta="18/09/2025 · 6 min" />
+          <ArticleCard img="https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop" cat="Gestão" title="Fluxo de caixa simples" excerpt="Planilha pronta para baixar" meta="17/09/2025 · 4 min" />
         </div>
       </section>
 
-      {/* Tabs */}
-      <section className="container">
-        <Tabs tabs={tabs} />
-      </section>
-
-      {/* Mais lidos */}
-      <section className="container">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-2xl font-bold">Mais lidos</h2>
-        </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <Card key={i} title="Título do artigo" description="Resumo do artigo com 2-3 linhas." imageSrc="/globe.svg" />
+      <section>
+        <h2 className="text-xl font-semibold mb-3">Explore por categoria</h2>
+        <div className="flex flex-wrap gap-2">
+          {[
+            { label: "Marketing" },
+            { label: "Ferramentas" },
+            { label: "Logística" },
+            { label: "Gestão" },
+          ].map((b) => (
+            <button key={b.label} className="h-9 px-4 rounded-xl border hover:shadow-hover focus:outline-none focus:ring-2 focus:ring-brand-teal">
+              {b.label}
+            </button>
           ))}
         </div>
       </section>
 
-      {/* Todos os conteúdos */}
-      <section className="container">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-2xl font-bold">Todos os conteúdos</h2>
-        </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <Card key={i} title={`Post ${i + 1}`} description="Um breve resumo do post." imageSrc="/window.svg" />
-          ))}
+      <section className="p-5 rounded-2xl border">
+        <div className="text-sm font-medium">Assine a newsletter</div>
+        <div className="mt-3 flex gap-2">
+          <input className="h-10 px-3 rounded-xl border border-border w-full max-w-sm focus:outline-none focus:ring-2 focus:ring-brand-teal" placeholder="seu@e-mail.com" />
+          <button className="h-10 px-4 rounded-xl bg-brand-teal text-white focus:outline-none focus:ring-2 focus:ring-brand-teal">Quero receber</button>
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="container">
-        <NewsletterForm />
-      </section>
-
-      {/* Cookie Banner */}
       <CookieBanner />
     </div>
   );
