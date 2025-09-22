@@ -57,10 +57,11 @@ export default function Home() {
           <article className="md:col-span-2 card overflow-hidden">
             <div className="relative aspect-[16/9]">
               <Image src="https://images.pexels.com/photos/8068355/pexels-photo-8068355.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop" alt="Hero" fill sizes="(max-width:768px) 100vw, 800px" className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             </div>
             <div className="p-5">
               <Chip>ROBÓTICA</Chip>
-              <h1 className="mt-2 text-2xl font-extrabold">Robôs domésticos começam a ser adotados para tarefas diárias.</h1>
+              <h1 className="mt-2 text-[22px] md:text-[28px] leading-[1.3] font-extrabold">Robôs domésticos começam a ser adotados para tarefas diárias.</h1>
             </div>
           </article>
           <div className="grid gap-4">
