@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -98,7 +99,31 @@ export default function Home() {
             ))}
           </div>
         </section>
+        <section className="grid gap-4 md:grid-cols-[2fr_1fr]">
+          <div className="space-y-3">
+            {[1,2,3,4,5].map((i) => (
+              <Link key={i} href="#" className="card p-4 grid grid-cols-[100px_1fr] gap-3 items-center">
+                <div className="relative h-16 rounded-lg overflow-hidden">
+                  <Image src={`https://picsum.photos/seed/${i}/200/120`} alt="" fill sizes="120px" className="object-cover" />
+                </div>
+                <div>
+                  <Chip>TECNOLOGIA</Chip>
+                  <h4 className="mt-1 text-sm font-semibold line-clamp-2">Nova pesquisa destaca avanços em interfaces cérebro-computador.</h4>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <aside className="card p-4">
+            <h3 className="text-sm font-semibold text-white/70">Newsletter</h3>
+            <p className="mt-1 text-xs text-muted">Receba destaques semanais no seu email.</p>
+            <form className="mt-3 space-y-2">
+              <input className="w-full h-9 rounded-lg border border-border bg-white/5 px-3 text-sm placeholder-muted focus:outline-none focus:ring-2 focus:ring-brand" placeholder="seu@email.com" />
+              <button className="btn btn-primary w-full">Inscrever-se</button>
+            </form>
+          </aside>
+        </section>
       </main>
+      <Footer />
     </div>
   );
 }
