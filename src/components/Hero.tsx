@@ -3,7 +3,7 @@ import type { JSX } from "react";
 export function Hero(): JSX.Element {
   return (
     <section className="container py-20">
-      <div className="flex items-center justify-between gap-12">
+      <div className="flex items-center justify-between gap-8">
         <div className="flex-1 space-y-12">
 					{/* Navigation arrows */}
 					<div className="flex items-center gap-2">
@@ -40,9 +40,9 @@ export function Hero(): JSX.Element {
 				{/* Hero Image */}
 				<div className="flex-shrink-0">
 					<img 
-						src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=702&fit=crop&crop=face" 
+						src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=600&fit=crop&crop=center" 
 						alt="Woman with face mask" 
-						className="w-[600px] h-[702px] rounded-sm object-cover"
+						className="w-[500px] h-[600px] rounded-sm object-cover"
 					/>
 				</div>
       </div>
