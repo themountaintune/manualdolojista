@@ -59,8 +59,8 @@ export function TrendingTopics(): JSX.Element {
           <div className="text-sm font-semibold text-accent uppercase tracking-wide">
             Trending Topics
           </div>
-          <h2 className="text-6xl font-semibold text-ink leading-tight max-w-lg">
-            Stay Trendy with Our Latest Insights
+          <h2 className="text-5xl font-semibold text-ink leading-tight max-w-lg">
+            Latest Beauty Insights
           </h2>
         </div>
         <button className="btn btn-outline">See More</button>
