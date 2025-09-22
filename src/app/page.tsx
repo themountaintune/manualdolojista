@@ -2,6 +2,52 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
+type Mini = { title: string; tag: string; img: string };
+
+const rightCards: Mini[] = [
+  {
+    title: "Novas redes ampliam cobertura em metrópoles brasileiras.",
+    tag: "INTERNET",
+    img: "https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg?auto=compress&cs=tinysrgb&w=800&h=450&fit=crop",
+  },
+  {
+    title: "Novas redes ampliam cobertura em metrópoles brasileiras.",
+    tag: "INTERNET",
+    img: "https://images.pexels.com/photos/258293/pexels-photo-258293.jpeg?auto=compress&cs=tinysrgb&w=800&h=450&fit=crop",
+  },
+];
+
+const midGrid: Mini[] = [
+  {
+    title: "Protótipo de veículo voador é apresentado.",
+    tag: "VEÍCULOS",
+    img: "https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+  },
+  {
+    title: "Plataforma de videoconferência com hologramas.",
+    tag: "HOLOGRAMAS",
+    img: "https://images.pexels.com/photos/3183206/pexels-photo-3183206.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+  },
+  {
+    title: "Nova geração de consoles é lançada.",
+    tag: "REALIDADE VIRTUAL",
+    img: "https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+  },
+  {
+    title: "Internet via satélite chega a áreas remotas.",
+    tag: "INTERNET",
+    img: "https://images.pexels.com/photos/5860563/pexels-photo-5860563.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+  },
+];
+
+function Chip({ children }: { children: string }) {
+  return (
+    <span className="inline-flex items-center rounded px-2 py-1 text-[11px] font-semibold uppercase tracking-wide bg-white/10 text-white/90 border border-white/15">
+      {children}
+    </span>
+  );
+}
+
 export default function Home() {
   return (
     <div>
@@ -13,19 +59,39 @@ export default function Home() {
               <Image src="https://images.pexels.com/photos/8068355/pexels-photo-8068355.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&fit=crop" alt="Hero" fill sizes="(max-width:768px) 100vw, 800px" className="object-cover" />
             </div>
             <div className="p-5">
-              <span className="text-[11px] font-semibold text-ink/90">ROBÓTICA</span>
+              <Chip>ROBÓTICA</Chip>
               <h1 className="mt-2 text-2xl font-extrabold">Robôs domésticos começam a ser adotados para tarefas diárias.</h1>
             </div>
           </article>
           <div className="grid gap-4">
-            {Array.from({ length: 2 }).map((_, i) => (
-              <Link key={i} href="#" className="card grid grid-cols-[120px_1fr] overflow-hidden">
+            {rightCards.map((c) => (
+              <Link key={c.title} href="#" className="card grid grid-cols-[120px_1fr] overflow-hidden">
                 <div className="relative h-24">
-                  <Image src={`https://picsum.photos/seed/${i+1}/400/300`} alt="" fill sizes="200px" className="object-cover" />
+                  <Image src={c.img} alt="" fill sizes="200px" className="object-cover" />
                 </div>
                 <div className="p-3">
-                  <span className="text-[11px]">INTERNET</span>
-                  <p className="mt-1 text-sm text-ink/90 line-clamp-2">Novas redes ampliam cobertura em metrópoles brasileiras.</p>
+                  <Chip>{c.tag}</Chip>
+                  <p className="mt-1 text-sm text-ink/90 line-clamp-2">{c.title}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="space-y-3">
+          <div className="flex items-center justify-between">
+            <h3 className="text-sm font-semibold text-white/70">Mais lidas da semana</h3>
+            <a href="#" className="text-xs text-muted hover:text-ink">Ver tudo →</a>
+          </div>
+          <div className="grid gap-4 md:grid-cols-4">
+            {midGrid.map((it) => (
+              <Link key={it.title} href="#" className="card overflow-hidden">
+                <div className="relative aspect-[4/3]">
+                  <Image src={it.img} alt="" fill sizes="(max-width:768px) 50vw, 280px" className="object-cover" />
+                </div>
+                <div className="p-3">
+                  <Chip>{it.tag}</Chip>
+                  <h4 className="mt-2 text-sm font-semibold line-clamp-2">{it.title}</h4>
                 </div>
               </Link>
             ))}
