@@ -1,19 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body { height: 100%; }
-body { @apply bg-bg text-ink antialiased font-sans; }
+html,
+body {
+  height: 100%;
+}
+body {
+  @apply bg-bg text-ink antialiased font-sans;
+}
 
-.container { @apply max-w-[1248px] mx-auto px-6; }
+.container {
+  @apply max-w-[1248px] mx-auto px-6;
+}
 
-.card { @apply rounded-md border border-line bg-panel shadow-card; }
-.btn { @apply inline-flex items-center justify-center px-6 py-2 text-base font-normal focus:outline-none focus:ring-2 focus:ring-accent; }
-.btn-primary { @apply bg-cta text-ink hover:opacity-90 rounded-md; }
-.btn-outline { @apply border border-line text-ink hover:bg-ink/5 rounded-md; }
-.btn-ghost { @apply text-ink hover:bg-ink/5 rounded-md; }
+.card {
+  @apply rounded-md border border-line bg-panel shadow-card;
+}
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-2 text-base font-normal focus:outline-none focus:ring-2 focus:ring-accent;
+}
+.btn-primary {
+  @apply bg-cta text-ink hover:opacity-90 rounded-md;
+}
+.btn-outline {
+  @apply border border-line text-ink hover:bg-ink/5 rounded-md;
+}
+.btn-ghost {
+  @apply text-ink hover:bg-ink/5 rounded-md;
+}
 
-.arrow-left { @apply w-5 h-2 bg-brand-muted; }
-.arrow-right { @apply w-5 h-2 bg-ink; }
+.arrow-left {
+  @apply w-5 h-2 bg-brand-muted;
+}
+.arrow-right {
+  @apply w-5 h-2 bg-ink;
+}

@@ -7,17 +7,17 @@ import Subscription from "@/components/Subscription";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-	return (
-		<div>
-			<Navbar />
-			<main>
-				<Hero />
-				<Categories />
-				<TrendingTopics />
-				<FeaturedVideos />
-				<Subscription />
-			</main>
-			<Footer />
-		</div>
-	);
+  return (
+    <div>
+      <Navbar />
+      <main>
+        <Hero />
+        <Categories />
+        <TrendingTopics />
+        <FeaturedVideos />
+        <Subscription />
+      </main>
+      <Footer />
+    </div>
+  );
 }
