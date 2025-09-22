@@ -7,7 +7,7 @@ export function Hero(): JSX.Element {
         <div className="flex-1 space-y-12">
 					{/* Navigation arrows */}
 					<div className="flex items-center gap-2">
-						<button className="p-2.5 rotate-180 hover:opacity-70 transition-opacity">
+						<button className="p-2.5 hover:opacity-70 transition-opacity">
 							<svg width="20" height="7" viewBox="0 0 20 7" fill="none">
 								<path d="M0 3.5L5 0V3H20V4H5V7L0 3.5Z" fill="rgba(51, 51, 51, 0.60)"/>
 							</svg>
@@ -40,8 +40,8 @@ export function Hero(): JSX.Element {
 				{/* Hero Image */}
 				<div className="flex-shrink-0">
 					<img 
-						src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=600&h=702&fit=crop&crop=face" 
-						alt="Woman with skincare routine" 
+						src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=702&fit=crop&crop=face" 
+						alt="Woman with face mask" 
 						className="w-[600px] h-[702px] rounded-sm object-cover"
 					/>
 				</div>
