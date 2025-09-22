@@ -24,7 +24,7 @@ export function Hero(): JSX.Element {
             <div className="text-sm font-semibold text-accent uppercase tracking-wide">
               FEATURED
             </div>
-            <h1 className="text-6xl font-semibold text-ink leading-tight">
+            <h1 className="text-4xl font-semibold text-ink leading-tight">
               10 Must-Have Skincare Products for Radiant Skin
             </h1>
             <p className="text-xl text-sub max-w-lg">
@@ -40,9 +40,9 @@ export function Hero(): JSX.Element {
 				{/* Hero Image */}
 				<div className="flex-shrink-0">
 					<img 
-						src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=500&fit=crop&crop=center" 
+						src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=450&h=550&fit=crop&crop=center" 
 						alt="Woman with face mask" 
-						className="w-[400px] h-[500px] rounded-sm object-cover"
+						className="w-[450px] h-[550px] rounded-sm object-cover"
 					/>
 				</div>
       </div>
