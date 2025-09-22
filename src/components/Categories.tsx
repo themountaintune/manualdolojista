@@ -4,17 +4,17 @@ export function Categories(): JSX.Element {
   const categories = [
     {
       title: "Skincare",
-      image: "https://placehold.co/287x416",
+      image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=287&h=416&fit=crop&crop=center",
       width: "w-[303px]",
     },
     {
       title: "Haircare",
-      image: "https://placehold.co/291x416",
+      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=291&h=416&fit=crop&crop=center",
       width: "w-[307px]",
     },
     {
       title: "Makeup",
-      image: "https://placehold.co/287x416",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=287&h=416&fit=crop&crop=center",
       width: "w-[303px]",
     },
   ];
@@ -49,15 +49,19 @@ export function Categories(): JSX.Element {
           ))}
         </div>
 
-        {/* Navigation arrows */}
-        <div className="absolute left-0 top-20 flex gap-2">
-          <div className="p-2.5 rotate-180">
-            <div className="arrow-left"></div>
-          </div>
-          <div className="p-2.5">
-            <div className="arrow-right"></div>
-          </div>
-        </div>
+				{/* Navigation arrows */}
+				<div className="absolute left-0 top-20 flex gap-2">
+					<button className="p-2.5 rotate-180 hover:opacity-70 transition-opacity">
+						<svg width="20" height="7" viewBox="0 0 20 7" fill="none">
+							<path d="M0 3.5L5 0V3H20V4H5V7L0 3.5Z" fill="rgba(51, 51, 51, 0.60)"/>
+						</svg>
+					</button>
+					<button className="p-2.5 hover:opacity-70 transition-opacity">
+						<svg width="20" height="7" viewBox="0 0 20 7" fill="none">
+							<path d="M20 3.5L15 7V4H0V3H15V0L20 3.5Z" fill="#333333"/>
+						</svg>
+					</button>
+				</div>
       </div>
     </section>
   );

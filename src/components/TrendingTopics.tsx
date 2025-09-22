@@ -6,7 +6,7 @@ export function TrendingTopics(): JSX.Element {
       title: "Seasonal Makeup Trends: Fall Edition",
       excerpt:
         "Dive into the enchanting world of fall-inspired makeup trends. From warm hues to bold lip colors, discover the latest beauty trends that will elevate your autumn beauty routine.",
-      image: "https://placehold.co/389x240",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
       author: "Jane Doe",
       readTime: "5min read",
     },
@@ -14,7 +14,7 @@ export function TrendingTopics(): JSX.Element {
       title: "Reviewing the Latest Beauty Innovations in 2023",
       excerpt:
         "Stay on the cutting edge of beauty with a comprehensive review of the latest innovations in the industry. From skincare breakthroughs to high-tech beauty gadgets, explore what's new in 2023.",
-      image: "https://placehold.co/389x240",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
       author: "Jane Doe",
       readTime: "5min read",
     },
@@ -22,7 +22,7 @@ export function TrendingTopics(): JSX.Element {
       title: "Reader Spotlight: Transformation Stories",
       excerpt:
         "Witness the incredible transformations of our valued customers. Read real stories of beauty journeys, complete with before-and-after photos, and be inspired by the power of self-care.",
-      image: "https://placehold.co/389x240",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
       author: "Jane Doe",
       readTime: "5min read",
     },
@@ -30,7 +30,7 @@ export function TrendingTopics(): JSX.Element {
       title: "Inside BB: Product Development Journey",
       excerpt:
         "Take an exclusive behind-the-scenes look at the creation of beauty products. Learn about commitment to quality, innovation, and the meticulous process that goes into each product.",
-      image: "https://placehold.co/389x240",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
       author: "Jane Doe",
       readTime: "5min read",
     },
@@ -38,7 +38,7 @@ export function TrendingTopics(): JSX.Element {
       title: "Exclusive Interview with Jenna Milhouse @missyb",
       excerpt:
         "Gain insights from a renowned beauty influencer or expert in an exclusive interview. Discover their favorite beauty tips, product recommendations, and the secrets behind their success in the industry.",
-      image: "https://placehold.co/389x240",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
       author: "Jane Doe",
       readTime: "5min read",
     },
@@ -46,7 +46,7 @@ export function TrendingTopics(): JSX.Element {
       title: "Step-by-Step Guide: Achieving the Perfect Smokey Eye",
       excerpt:
         "Witness the incredible transformations of our valued customers. Read real stories of beauty journeys, complete with before-and-after photos, and be inspired by the power of self-care.",
-      image: "https://placehold.co/389x240",
+      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
       author: "Jane Doe",
       readTime: "5min read",
     },

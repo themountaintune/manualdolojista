@@ -12,7 +12,7 @@
       "static/chunks/fd9d1056-aa94ea5c2eabf904.js",
       "static/chunks/117-a3534609b8cd9341.js",
       "static/chunks/main-app-73a88f1ae13a8a23.js",
-      "static/css/35517a5b2cdacb63.css",
+      "static/css/2d4fb4a065b20bbf.css",
       "static/chunks/app/layout-d8d560eb55d6b1c6.js"
     ],
     "/artigo/plataformas-ecommerce-2025/page": [
@@ -21,7 +21,7 @@
       "static/chunks/117-a3534609b8cd9341.js",
       "static/chunks/main-app-73a88f1ae13a8a23.js",
       "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/artigo/plataformas-ecommerce-2025/page-53b5ff083f5673e8.js"
+      "static/chunks/app/artigo/plataformas-ecommerce-2025/page-197339904dfc8701.js"
     ],
     "/cases/page": [
       "static/chunks/webpack-8658fdbc42bfbbae.js",
@@ -29,31 +29,7 @@
       "static/chunks/117-a3534609b8cd9341.js",
       "static/chunks/main-app-73a88f1ae13a8a23.js",
       "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/cases/page-7ba54ac849f62fe6.js"
-    ],
-    "/como-testamos/page": [
-      "static/chunks/webpack-8658fdbc42bfbbae.js",
-      "static/chunks/fd9d1056-aa94ea5c2eabf904.js",
-      "static/chunks/117-a3534609b8cd9341.js",
-      "static/chunks/main-app-73a88f1ae13a8a23.js",
-      "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/como-testamos/page-56091d3c4e642164.js"
-    ],
-    "/disclosure/page": [
-      "static/chunks/webpack-8658fdbc42bfbbae.js",
-      "static/chunks/fd9d1056-aa94ea5c2eabf904.js",
-      "static/chunks/117-a3534609b8cd9341.js",
-      "static/chunks/main-app-73a88f1ae13a8a23.js",
-      "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/disclosure/page-2680f257fbea1e31.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-8658fdbc42bfbbae.js",
-      "static/chunks/fd9d1056-aa94ea5c2eabf904.js",
-      "static/chunks/117-a3534609b8cd9341.js",
-      "static/chunks/main-app-73a88f1ae13a8a23.js",
-      "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/page-6e564abf14039288.js"
+      "static/chunks/app/cases/page-7df46208a3098806.js"
     ],
     "/glossario/page": [
       "static/chunks/webpack-8658fdbc42bfbbae.js",
@@ -61,7 +37,7 @@
       "static/chunks/117-a3534609b8cd9341.js",
       "static/chunks/main-app-73a88f1ae13a8a23.js",
       "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/glossario/page-f33a608a43f14a33.js"
+      "static/chunks/app/glossario/page-7d36d29b84c08ad0.js"
     ],
     "/materiais/page": [
       "static/chunks/webpack-8658fdbc42bfbbae.js",
@@ -69,7 +45,7 @@
       "static/chunks/117-a3534609b8cd9341.js",
       "static/chunks/main-app-73a88f1ae13a8a23.js",
       "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/materiais/page-4122ad666bdec6e5.js"
+      "static/chunks/app/materiais/page-f1203f1a41d6cf45.js"
     ],
     "/privacidade/page": [
       "static/chunks/webpack-8658fdbc42bfbbae.js",
@@ -77,7 +53,31 @@
       "static/chunks/117-a3534609b8cd9341.js",
       "static/chunks/main-app-73a88f1ae13a8a23.js",
       "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/privacidade/page-0bf218f834206888.js"
+      "static/chunks/app/privacidade/page-52fd88d45752271c.js"
+    ],
+    "/disclosure/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-aa94ea5c2eabf904.js",
+      "static/chunks/117-a3534609b8cd9341.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/972-f708ded502b3627d.js",
+      "static/chunks/app/disclosure/page-7592df2643b0358b.js"
+    ],
+    "/como-testamos/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-aa94ea5c2eabf904.js",
+      "static/chunks/117-a3534609b8cd9341.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/972-f708ded502b3627d.js",
+      "static/chunks/app/como-testamos/page-5bf915f5e532af59.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-aa94ea5c2eabf904.js",
+      "static/chunks/117-a3534609b8cd9341.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/972-f708ded502b3627d.js",
+      "static/chunks/app/page-89c2196c4892ee26.js"
     ],
     "/artigo/skincare-products-2025/page": [
       "static/chunks/webpack-8658fdbc42bfbbae.js",
@@ -85,7 +85,7 @@
       "static/chunks/117-a3534609b8cd9341.js",
       "static/chunks/main-app-73a88f1ae13a8a23.js",
       "static/chunks/972-f708ded502b3627d.js",
-      "static/chunks/app/artigo/skincare-products-2025/page-a3b6609f20b314de.js"
+      "static/chunks/app/artigo/skincare-products-2025/page-3d62e37dd39574c0.js"
     ]
   }
 }

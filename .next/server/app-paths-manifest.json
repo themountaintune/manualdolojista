@@ -2,11 +2,11 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/artigo/plataformas-ecommerce-2025/page": "app/artigo/plataformas-ecommerce-2025/page.js",
   "/cases/page": "app/cases/page.js",
-  "/como-testamos/page": "app/como-testamos/page.js",
-  "/disclosure/page": "app/disclosure/page.js",
-  "/page": "app/page.js",
   "/glossario/page": "app/glossario/page.js",
   "/materiais/page": "app/materiais/page.js",
   "/privacidade/page": "app/privacidade/page.js",
+  "/disclosure/page": "app/disclosure/page.js",
+  "/como-testamos/page": "app/como-testamos/page.js",
+  "/page": "app/page.js",
   "/artigo/skincare-products-2025/page": "app/artigo/skincare-products-2025/page.js"
 }

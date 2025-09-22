@@ -30,22 +30,26 @@ export function FeaturedVideos(): JSX.Element {
           <h2 className="text-6xl font-semibold text-ink leading-tight">Featured Videos</h2>
         </div>
 
-        {/* Navigation arrows */}
-        <div className="flex gap-1">
-          <div className="p-2.5 -rotate-90">
-            <div className="w-2 h-5 bg-brand-muted"></div>
-          </div>
-          <div className="p-2.5 rotate-90">
-            <div className="w-2 h-5 bg-ink"></div>
-          </div>
-        </div>
+				{/* Navigation arrows */}
+				<div className="flex gap-1">
+					<button className="p-2.5 -rotate-90 hover:opacity-70 transition-opacity">
+						<svg width="7" height="20" viewBox="0 0 7 20" fill="none">
+							<path d="M3.5 0L7 4H4V20H3V4H0L3.5 0Z" fill="rgba(51, 51, 51, 0.60)"/>
+						</svg>
+					</button>
+					<button className="p-2.5 rotate-90 hover:opacity-70 transition-opacity">
+						<svg width="7" height="20" viewBox="0 0 7 20" fill="none">
+							<path d="M3.5 20L0 16H3V0H4V16H7L3.5 20Z" fill="#333333"/>
+						</svg>
+					</button>
+				</div>
       </div>
 
       <div className="flex gap-4">
         {/* Main Video */}
         <div className="relative w-[827px] h-[466px]">
-          <img
-            src="https://placehold.co/827x466"
+          <img 
+            src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?w=827&h=466&fit=crop&crop=center" 
             alt="Featured video"
             className="w-full h-full rounded-md border border-line object-cover"
           />

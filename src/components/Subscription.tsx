@@ -34,8 +34,8 @@ export function Subscription(): JSX.Element {
 
         {/* Subscription Image */}
         <div className="flex-shrink-0">
-          <img
-            src="https://placehold.co/604x529"
+          <img 
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=604&h=529&fit=crop&crop=center" 
             alt="Beauty community"
             className="w-[604px] h-[529px] rounded-md border border-line object-cover"
           />

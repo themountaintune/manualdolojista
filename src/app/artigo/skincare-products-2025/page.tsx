@@ -41,7 +41,7 @@ export default function SkincareArticle() {
       <main className="container py-20">
         <article className="max-w-4xl mx-auto">
           <img
-            src="https://placehold.co/1200x600"
+            src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&h=600&fit=crop&crop=center"
             alt="Skincare products"
             className="w-full aspect-video object-cover rounded-sm border border-line shadow-card mb-8"
           />
