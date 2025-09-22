@@ -24,7 +24,7 @@ export function Hero(): JSX.Element {
             <div className="text-sm font-semibold text-accent uppercase tracking-wide">
               FEATURED
             </div>
-            <h1 className="text-4xl font-semibold text-ink leading-tight">
+            <h1 className="text-6xl font-semibold text-ink leading-tight">
               10 Must-Have Skincare Products for Radiant Skin
             </h1>
             <p className="text-xl text-sub max-w-lg">
