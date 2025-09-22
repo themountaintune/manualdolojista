@@ -1,11 +1,12 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/como-testamos/page": "app/como-testamos/page.js",
   "/artigo/plataformas-ecommerce-2025/page": "app/artigo/plataformas-ecommerce-2025/page.js",
-  "/glossario/page": "app/glossario/page.js",
   "/cases/page": "app/cases/page.js",
-  "/privacidade/page": "app/privacidade/page.js",
+  "/como-testamos/page": "app/como-testamos/page.js",
+  "/glossario/page": "app/glossario/page.js",
   "/disclosure/page": "app/disclosure/page.js",
+  "/materiais/page": "app/materiais/page.js",
   "/page": "app/page.js",
-  "/materiais/page": "app/materiais/page.js"
+  "/privacidade/page": "app/privacidade/page.js",
+  "/artigo/skincare-products-2025/page": "app/artigo/skincare-products-2025/page.js"
 }

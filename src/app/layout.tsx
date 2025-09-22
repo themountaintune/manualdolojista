@@ -2,33 +2,33 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: { default: "Manual do Lojista", template: "%s | Manual do Lojista" },
-	description: "Guias independentes, checklists e planilhas para MEIs/PMEs. Aprenda a abrir e gerenciar sua loja online com especialistas.",
-	keywords: ["e-commerce", "loja online", "MEI", "PME", "marketing digital", "vendas online"],
-	authors: [{ name: "Manual do Lojista" }],
-	creator: "Manual do Lojista",
-	publisher: "Manual do Lojista",
-	metadataBase: new URL("https://manualdolojista.vercel.app"),
+	title: { default: "Daily Beauty", template: "%s | Daily Beauty" },
+	description: "Your ultimate beauty destination. Discover the latest skincare trends, makeup tutorials, and expert beauty advice.",
+	keywords: ["beauty", "skincare", "makeup", "haircare", "cosmetics", "beauty tips", "beauty trends"],
+	authors: [{ name: "Daily Beauty" }],
+	creator: "Daily Beauty",
+	publisher: "Daily Beauty",
+	metadataBase: new URL("https://dailybeauty.vercel.app"),
 	openGraph: {
 		type: "website",
-		locale: "pt_BR",
-		url: "https://manualdolojista.vercel.app",
-		siteName: "Manual do Lojista",
-		title: "Manual do Lojista",
-		description: "Guias independentes, checklists e planilhas para MEIs/PMEs.",
+		locale: "en_US",
+		url: "https://dailybeauty.vercel.app",
+		siteName: "Daily Beauty",
+		title: "Daily Beauty",
+		description: "Your ultimate beauty destination. Discover the latest skincare trends, makeup tutorials, and expert beauty advice.",
 		images: [
 			{
 				url: "/og-default.jpg",
 				width: 1200,
 				height: 630,
-				alt: "Manual do Lojista - Guias para e-commerce",
+				alt: "Daily Beauty - Your Ultimate Beauty Destination",
 			},
 		],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Manual do Lojista",
-		description: "Guias independentes, checklists e planilhas para MEIs/PMEs.",
+		title: "Daily Beauty",
+		description: "Your ultimate beauty destination. Discover the latest skincare trends, makeup tutorials, and expert beauty advice.",
 		images: ["/og-default.jpg"],
 	},
 	robots: {
@@ -44,11 +44,11 @@ export const metadata: Metadata = {
 	},
 };
 
-export const viewport: Viewport = { themeColor: "#06B6D4" };
+export const viewport: Viewport = { themeColor: "#B76E79" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="pt-BR">
+		<html lang="en">
 			<body>{children}</body>
 		</html>
 	);

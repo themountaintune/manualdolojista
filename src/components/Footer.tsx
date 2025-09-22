@@ -1,22 +1,43 @@
 import type { JSX } from "react";
+import Link from "next/link";
 
 export function Footer(): JSX.Element {
 	return (
-		<footer className="mt-12 border-t border-line bg-panel">
-			<div className="container py-8 grid gap-6 md:grid-cols-3">
-				<div>
-					<p className="text-sm font-extrabold tracking-tight text-white">Manual do Lojista</p>
-					<p className="mt-2 text-xs text-sub">© {new Date().getFullYear()} Todos os direitos reservados.</p>
-				</div>
-				<nav className="text-sm grid grid-cols-2 gap-2">
-					<a href="#" className="hover:text-ink">Sobre</a>
-					<a href="#" className="hover:text-ink">Contato</a>
-					<a href="/privacidade" className="hover:text-ink">Privacidade</a>
-					<a href="/disclosure" className="hover:text-ink">Disclosure</a>
-				</nav>
+		<footer className="border-t border-line bg-bg">
+			<div className="container py-4 flex items-center justify-between">
+				{/* Logo */}
 				<div className="flex items-center gap-2">
-					<a className="btn btn-ghost h-9" href="#">Twitter</a>
-					<a className="btn btn-ghost h-9" href="#">LinkedIn</a>
+					<div className="relative w-10 h-12">
+						<div className="absolute w-5 h-7 bg-ink top-0 left-0"></div>
+						<div className="absolute w-5 h-7 bg-accent top-2 left-4"></div>
+					</div>
+					<div className="text-xs text-ink">
+						<span className="text-ink">daily </span>
+						<span className="text-accent">beauty</span>
+					</div>
+				</div>
+				
+				{/* Social Icons */}
+				<div className="flex items-center gap-4">
+					<div className="w-6 h-6 relative overflow-hidden">
+						<div className="absolute w-4 h-4 left-1 top-1 bg-ink"></div>
+					</div>
+					<div className="w-6 h-6 relative overflow-hidden">
+						<div className="absolute w-5 h-5 left-0.5 top-0.5 bg-ink"></div>
+					</div>
+					<div className="w-6 h-6 relative overflow-hidden">
+						<div className="absolute w-5 h-4 left-0.5 top-1 bg-ink"></div>
+					</div>
+				</div>
+				
+				{/* Links */}
+				<div className="flex items-center gap-3.5">
+					<Link href="/privacy" className="text-sm text-ink hover:text-accent">
+						Privacy Policy
+					</Link>
+					<Link href="/cookies" className="text-sm text-ink hover:text-accent">
+						Cookie Policy
+					</Link>
 				</div>
 			</div>
 		</footer>
