@@ -1,0 +1,75 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/_not-found/page-cc2efd12c4b21ce9.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/css/eb9740eab52b8298.css",
+      "static/chunks/app/layout-d8d560eb55d6b1c6.js"
+    ],
+    "/como-testamos/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/como-testamos/page-447f3a77ec79901c.js"
+    ],
+    "/artigo/plataformas-ecommerce-2025/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/artigo/plataformas-ecommerce-2025/page-84f184433aa6e065.js"
+    ],
+    "/glossario/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/glossario/page-b59d83c49581d1da.js"
+    ],
+    "/cases/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/cases/page-956b5dfca46784ba.js"
+    ],
+    "/privacidade/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/privacidade/page-42e3e69c08e53672.js"
+    ],
+    "/disclosure/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/disclosure/page-427d699f9292ea5d.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/page-09b693d1bc5baf65.js"
+    ],
+    "/materiais/page": [
+      "static/chunks/webpack-8658fdbc42bfbbae.js",
+      "static/chunks/fd9d1056-3eee857bde8f3b06.js",
+      "static/chunks/117-bad8fb5e228aeb01.js",
+      "static/chunks/main-app-73a88f1ae13a8a23.js",
+      "static/chunks/app/materiais/page-4bb0a1d4030191a1.js"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { @apply bg-bg text-ink antialiased; }
+
+.container { @apply max-w-[1200px] mx-auto px-4 md:px-6; }
+
+.card { @apply rounded-2xl border border-line bg-panel shadow-card; }
+.btn { @apply inline-flex h-10 items-center rounded-xl px-4 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-teal; }
+.btn-primary { @apply bg-brand-teal text-black hover:opacity-90; }
+.btn-ghost { @apply bg-white/5 text-ink hover:bg-white/10 border border-line; }
