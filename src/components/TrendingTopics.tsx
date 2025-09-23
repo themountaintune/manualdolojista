@@ -1,69 +1,73 @@
-import type { JSX } from "react";
+import React from "react";
 
-export function TrendingTopics(): JSX.Element {
+export function TrendingTopics(): React.JSX.Element {
   const articles = [
     {
-      title: "Seasonal Makeup Trends: Fall Edition",
+      title: "Tendências de E-commerce para 2024",
       excerpt:
-        "Dive into the enchanting world of fall-inspired makeup trends. From warm hues to bold lip colors, discover the latest beauty trends that will elevate your autumn beauty routine.",
-      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
-      author: "Jane Doe",
-      readTime: "5min read",
+        "Descubra as principais tendências que estão moldando o futuro do comércio eletrônico. De inteligência artificial a experiências personalizadas, explore o que está por vir.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=389&h=240&fit=crop&crop=center",
+      author: "João Silva",
+      readTime: "5min leitura",
     },
     {
-      title: "Reviewing the Latest Beauty Innovations in 2023",
+      title: "Como Otimizar sua Loja Online para Conversões",
       excerpt:
-        "Stay on the cutting edge of beauty with a comprehensive review of the latest innovations in the industry. From skincare breakthroughs to high-tech beauty gadgets, explore what's new in 2023.",
-      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
-      author: "Jane Doe",
-      readTime: "5min read",
+        "Aprenda estratégias comprovadas para aumentar a taxa de conversão da sua loja online. De UX design a copywriting, descubra os segredos para vender mais.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=389&h=240&fit=crop&crop=center",
+      author: "Maria Santos",
+      readTime: "7min leitura",
     },
     {
-      title: "Reader Spotlight: Transformation Stories",
+      title: "Cases de Sucesso: Lojistas que Faturaram R$ 1M+",
       excerpt:
-        "Witness the incredible transformations of our valued customers. Read real stories of beauty journeys, complete with before-and-after photos, and be inspired by the power of self-care.",
-      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
-      author: "Jane Doe",
-      readTime: "5min read",
+        "Conheça histórias inspiradoras de empreendedores que construíram impérios no e-commerce. Aprenda com seus erros e acertos para acelerar seu crescimento.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=389&h=240&fit=crop&crop=center",
+      author: "Pedro Costa",
+      readTime: "6min leitura",
     },
     {
-      title: "Inside BB: Product Development Journey",
+      title: "Marketing Digital: Guia Completo para Iniciantes",
       excerpt:
-        "Take an exclusive behind-the-scenes look at the creation of beauty products. Learn about commitment to quality, innovation, and the meticulous process that goes into each product.",
-      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
-      author: "Jane Doe",
-      readTime: "5min read",
+        "Domine as principais estratégias de marketing digital para e-commerce. De SEO a redes sociais, aprenda a atrair e converter clientes online.",
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=389&h=240&fit=crop&crop=center",
+      author: "Ana Oliveira",
+      readTime: "8min leitura",
     },
     {
-      title: "Exclusive Interview with Jenna Milhouse @missyb",
+      title: "Entrevista Exclusiva: CEO da Maior Loja Online do Brasil",
       excerpt:
-        "Gain insights from a renowned beauty influencer or expert in an exclusive interview. Discover their favorite beauty tips, product recommendations, and the secrets behind their success in the industry.",
-      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
-      author: "Jane Doe",
-      readTime: "5min read",
+        "Ganhe insights valiosos com um dos maiores nomes do e-commerce brasileiro. Descubra estratégias, desafios e oportunidades no mercado digital.",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=389&h=240&fit=crop&crop=center",
+      author: "Carlos Mendes",
+      readTime: "10min leitura",
     },
     {
-      title: "Step-by-Step Guide: Achieving the Perfect Smokey Eye",
+      title: "Passo a Passo: Como Criar uma Loja Online do Zero",
       excerpt:
-        "Witness the incredible transformations of our valued customers. Read real stories of beauty journeys, complete with before-and-after photos, and be inspired by the power of self-care.",
-      image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=389&h=240&fit=crop&crop=center",
-      author: "Jane Doe",
-      readTime: "5min read",
+        "Aprenda a criar sua primeira loja online em 7 dias. Do planejamento à primeira venda, siga este guia completo para começar no e-commerce.",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=389&h=240&fit=crop&crop=center",
+      author: "Lucia Ferreira",
+      readTime: "12min leitura",
     },
   ];
 
   return (
     <section className="container py-20">
       <div className="flex items-end justify-between mb-10">
-        <div className="space-y-2">
-          <div className="text-sm font-semibold text-accent uppercase tracking-wide">
-            Trending Topics
+        <div className="space-y-6">
+          <div className="section-title">
+            <span className="text-sm font-medium text-[#F81539] uppercase tracking-wide">
+              Tópicos em Destaque
+            </span>
           </div>
-          <h2 className="text-5xl font-semibold text-ink leading-tight max-w-lg">
-            Latest Beauty Insights
+          <h2 className="text-4xl lg:text-5xl font-medium text-[#3E3232] leading-tight max-w-lg">
+            Últimas Tendências do E-commerce
           </h2>
         </div>
-        <button className="btn btn-outline">See More</button>
+        <button className="border border-[#3E3232] text-[#3E3232] hover:bg-[#3E3232] hover:text-white px-6 py-2 rounded-md transition-colors duration-200">
+          Ver Mais
+        </button>
       </div>
 
       {/* Articles Grid */}
@@ -71,23 +75,23 @@ export function TrendingTopics(): JSX.Element {
         {/* First row */}
         <div className="flex gap-4">
           {articles.slice(0, 3).map((article, index) => (
-            <article key={index} className="w-[405px] card p-2">
+            <article key={index} className="w-[405px] bg-white rounded-2xl p-4 shadow-lg">
               <img
                 src={article.image}
                 alt={article.title}
-                className="w-full h-60 rounded-sm border border-line object-cover"
+                className="w-full h-60 rounded-xl object-cover"
               />
               <div className="p-2 space-y-4">
-                <h3 className="text-2xl font-normal text-ink leading-tight">{article.title}</h3>
-                <p className="text-base font-light text-sub leading-relaxed tracking-wide">
+                <h3 className="text-2xl font-normal text-[#3E3232] leading-tight">{article.title}</h3>
+                <p className="text-base font-light text-[rgba(62,50,50,0.75)] leading-relaxed tracking-wide">
                   {article.excerpt}
                 </p>
-                <div className="pt-3 border-t border-line/16 flex items-center justify-between">
+                <div className="pt-3 border-t border-gray-200 flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <span className="text-sm text-ink">{article.author}</span>
-                    <span className="text-sm text-ink">{article.readTime}</span>
+                    <span className="text-sm text-[#3E3232]">{article.author}</span>
+                    <span className="text-sm text-[#3E3232]">{article.readTime}</span>
                   </div>
-                  <div className="w-5 h-2 bg-brand-muted"></div>
+                  <div className="w-5 h-2 bg-[#F81539] rounded-full"></div>
                 </div>
               </div>
             </article>
@@ -97,23 +101,23 @@ export function TrendingTopics(): JSX.Element {
         {/* Second row */}
         <div className="flex gap-4">
           {articles.slice(3, 6).map((article, index) => (
-            <article key={index + 3} className="w-[405px] card p-2">
+            <article key={index + 3} className="w-[405px] bg-white rounded-2xl p-4 shadow-lg">
               <img
                 src={article.image}
                 alt={article.title}
-                className="w-full h-60 rounded-sm border border-line object-cover"
+                className="w-full h-60 rounded-xl object-cover"
               />
               <div className="p-2 space-y-4">
-                <h3 className="text-2xl font-normal text-ink leading-tight">{article.title}</h3>
-                <p className="text-base font-light text-sub leading-relaxed tracking-wide">
+                <h3 className="text-2xl font-normal text-[#3E3232] leading-tight">{article.title}</h3>
+                <p className="text-base font-light text-[rgba(62,50,50,0.75)] leading-relaxed tracking-wide">
                   {article.excerpt}
                 </p>
-                <div className="pt-3 border-t border-line/16 flex items-center justify-between">
+                <div className="pt-3 border-t border-gray-200 flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <span className="text-sm text-ink">{article.author}</span>
-                    <span className="text-sm text-ink">{article.readTime}</span>
+                    <span className="text-sm text-[#3E3232]">{article.author}</span>
+                    <span className="text-sm text-[#3E3232]">{article.readTime}</span>
                   </div>
-                  <div className="w-5 h-2 bg-brand-muted"></div>
+                  <div className="w-5 h-2 bg-[#F81539] rounded-full"></div>
                 </div>
               </div>
             </article>

@@ -2,44 +2,44 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: { default: "Daily Beauty", template: "%s | Daily Beauty" },
+  title: { default: "Manual do Lojista", template: "%s | Manual do Lojista" },
   description:
-    "Your ultimate beauty destination. Discover the latest skincare trends, makeup tutorials, and expert beauty advice.",
+    "Seu guia completo para o comércio eletrônico. Descubra as melhores práticas, tendências e estratégias para o seu negócio online.",
   keywords: [
-    "beauty",
-    "skincare",
-    "makeup",
-    "haircare",
-    "cosmetics",
-    "beauty tips",
-    "beauty trends",
+    "ecommerce",
+    "loja online",
+    "vendas online",
+    "marketing digital",
+    "negócios",
+    "empreendedorismo",
+    "comércio eletrônico",
   ],
-  authors: [{ name: "Daily Beauty" }],
-  creator: "Daily Beauty",
-  publisher: "Daily Beauty",
-  metadataBase: new URL("https://dailybeauty.vercel.app"),
+  authors: [{ name: "Manual do Lojista" }],
+  creator: "Manual do Lojista",
+  publisher: "Manual do Lojista",
+  metadataBase: new URL("https://manualdolojista.com"),
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://dailybeauty.vercel.app",
-    siteName: "Daily Beauty",
-    title: "Daily Beauty",
+    locale: "pt_BR",
+    url: "https://manualdolojista.com",
+    siteName: "Manual do Lojista",
+    title: "Manual do Lojista",
     description:
-      "Your ultimate beauty destination. Discover the latest skincare trends, makeup tutorials, and expert beauty advice.",
+      "Seu guia completo para o comércio eletrônico. Descubra as melhores práticas, tendências e estratégias para o seu negócio online.",
     images: [
       {
         url: "/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Daily Beauty - Your Ultimate Beauty Destination",
+        alt: "Manual do Lojista - Seu Guia Completo para E-commerce",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Daily Beauty",
+    title: "Manual do Lojista",
     description:
-      "Your ultimate beauty destination. Discover the latest skincare trends, makeup tutorials, and expert beauty advice.",
+      "Seu guia completo para o comércio eletrônico. Descubra as melhores práticas, tendências e estratégias para o seu negócio online.",
     images: ["/og-default.jpg"],
   },
   robots: {
@@ -55,11 +55,11 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = { themeColor: "#B76E79" };
+export const viewport: Viewport = { themeColor: "#F81539" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body>{children}</body>
     </html>
   );

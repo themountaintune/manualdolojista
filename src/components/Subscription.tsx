@@ -1,44 +1,49 @@
-import type { JSX } from "react";
+import React from "react";
 
-export function Subscription(): JSX.Element {
+export function Subscription(): React.JSX.Element {
   return (
-    <section className="container py-12">
-      <div className="rounded-md border border-line p-16 flex items-center justify-between">
-        <div className="space-y-12">
-          <div className="space-y-2 max-w-lg">
-            <div className="text-sm font-semibold text-accent uppercase tracking-wide">
-              Subscription
+    <section className="newsletter-section">
+      <div className="container">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Left side - Newsletter form */}
+            <div className="space-y-6">
+              <div className="section-title">
+                <h2 className="text-2xl font-medium text-[#3E3232] capitalize">
+                  Newsletter
+                </h2>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex-1">
+                  <input
+                    type="email"
+                    placeholder="Digite seu email .."
+                    className="newsletter-input"
+                  />
+                </div>
+                <button className="gradient-button px-6 py-3 text-sm font-medium">
+                  Inscrever-se
+                </button>
+              </div>
             </div>
-            <h2 className="text-6xl font-semibold text-ink leading-tight">
-              Join our exclusive beauty community
-            </h2>
-            <p className="text-base font-light text-sub leading-relaxed tracking-wide">
-              Elevate your beauty journey with personalized recommendations and stay connected with
-              a community that shares your passion for self-care. Subscribe now and embark on a
-              beauty adventure with us!
-            </p>
-          </div>
 
-          {/* Email Form */}
-          <div className="relative w-[400px] h-[46px]">
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="absolute inset-0 w-full h-full px-4 py-3 rounded-md border border-line bg-panel text-ink placeholder-brand-muted focus:outline-none focus:ring-2 focus:ring-accent"
-            />
-            <button className="absolute right-1 top-1 bottom-1 px-6 py-2 bg-cta text-ink rounded-md hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-accent">
-              Subscribe
-            </button>
+            {/* Right side - Content */}
+            <div className="hidden lg:block">
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 className="text-xl font-medium text-[#3E3232] mb-4">
+                  Mantenha-se Atualizado
+                </h3>
+                <p className="text-sm text-[rgba(62,50,50,0.75)] mb-6">
+                  Receba as últimas dicas de e-commerce, análises de produtos e ofertas exclusivas diretamente na sua caixa de entrada.
+                </p>
+                <div className="flex items-center gap-2 text-xs text-[rgba(62,50,50,0.75)]">
+                  <span>✓</span>
+                  <span>Sem spam, cancele a qualquer momento</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Subscription Image */}
-        <div className="flex-shrink-0">
-          <img 
-            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=604&h=529&fit=crop&crop=center" 
-            alt="Beauty community"
-            className="w-[604px] h-[529px] rounded-md border border-line object-cover"
-          />
         </div>
       </div>
     </section>
